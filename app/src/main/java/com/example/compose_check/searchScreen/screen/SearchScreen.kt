@@ -45,7 +45,7 @@ fun SearchScreen(
     Column {
         SearchTextFiled(searchTerm = searchTerm)
         LazyColumn {
-            itemsIndexed(searchResults.value!!) { _, item ->
+            itemsIndexed(searchResults.value) { _, item ->
                 SingleCountryDisplay(
                     navController = navController,
                     countryData = item
